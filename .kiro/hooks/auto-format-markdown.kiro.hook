@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Auto-format Markdown",
+  "description": "Automatically structure and validate markdown documentation files",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the markdown file for proper structure, formatting, and consistency. Check for: proper heading hierarchy, consistent list formatting, correct link syntax, and overall document organization. Fix any issues found."
+  }
+}
